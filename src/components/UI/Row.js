@@ -11,36 +11,51 @@ const Row = styled.div`
   ${p => p.reverse && `
     flex-direction: row-reverse;
   `}
-  ${p => p.start`
+  ${p => p.start &&`
     justify-content: flex-start;
   `}
-  ${p => p.center`
+  ${p => p.center &&`
     justify-content: center;
   `}
-  ${p => p.end`
+  ${p => p.end &&`
     justify-content: flex-end;
   `}
-  ${p => p.top`
+  ${p => p.top &&`
     align-items: flex-start;
   `}
-  ${p => p.middle`
+  ${p => p.middle &&`
     align-items: center;
   `}
-  ${p => p.bottom`
+  ${p => p.bottom &&`
     align-items: flex-end;
   `}
-  ${p => p.around`
+  ${p => p.around &&`
     justify-content: space-around;
   `}
-  ${p => p.between`
+  ${p => p.between &&`
     justify-content: space-between;
   `}
-  ${p => p.first`
+  ${p => p.first &&`
     order: -1;
   `}
-  ${p => p.last`
+  ${p => p.last &&`
     order: 1;
   `}
 `
+
+Row.propTypes = {
+    reverse: PropTypes.bool,
+    start: ModificatorType,
+    center: ModificatorType,
+    end: ModificatorType,
+    top: ModificatorType,
+    middle: ModificatorType,
+    bottom: ModificatorType,
+    around: ModificatorType,
+    between: ModificatorType,
+    first: ModificatorType,
+    last: ModificatorType,
+    children: PropTypes.node
+}
 
 export default Row
