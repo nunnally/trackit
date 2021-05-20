@@ -5,7 +5,7 @@ import Row from './components/UI/Row'
 
 const App = () => {
     return (
-        <Row>Teste</Row>
+        <Row center>Teste</Row>
     );
 }
 

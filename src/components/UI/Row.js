@@ -43,19 +43,4 @@ const Row = styled.div`
   `}
 `
 
-Row.propTypes = {
-    reverse: PropTypes.bool,
-    start: ModificatorType,
-    center: ModificatorType,
-    end: ModificatorType,
-    top: ModificatorType,
-    middle: ModificatorType,
-    bottom: ModificatorType,
-    around: ModificatorType,
-    between: ModificatorType,
-    first: ModificatorType,
-    last: ModificatorType,
-    children: PropTypes.node
-}
-
 export default Row
